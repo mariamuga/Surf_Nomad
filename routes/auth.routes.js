@@ -54,3 +54,24 @@ router.post("/signup", (req, res, next) => {
     }
   });
 });
+router.get("/login", (req, res, next) => {
+  res.render("auth/login", { message: req.flash("error") });
+});
+
+router.post(
+  "/login",
+  passport.authenticate("local", {
+    // here you can add your own routes
+    successRedirect: "/private-page",
+    failureRedirect: "/login",
+    // this is set
+    failureFlash: true,
+    passReqToCallback: true,
+  })
+);
+router.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/login");
+});
+
+module.exports = router;
