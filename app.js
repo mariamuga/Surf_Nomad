@@ -19,7 +19,7 @@ const LocalStrategy = require("passport-local").Strategy;
 const flash = require("connect-flash");
 
 mongoose
-  .connect("mongodb://localhost/auth-with-passport", {
+  .connect("mongodb://localhost/Surf_Nomad", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

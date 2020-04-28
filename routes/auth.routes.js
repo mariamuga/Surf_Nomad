@@ -19,7 +19,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", (req, res, next) => {
-  const { username, password } = req.body;
+  const { username, email, password } = req.body;
 
   if (password.length < 8) {
     res.render("auth/signup", {
