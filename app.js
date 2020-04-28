@@ -18,6 +18,8 @@ const LocalStrategy = require("passport-local").Strategy;
 
 const flash = require("connect-flash");
 
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
+
 mongoose
   .connect("mongodb://localhost/Surf_Nomad", {
     useNewUrlParser: true,
@@ -87,6 +89,37 @@ passport.use(
         done(err, false);
       });
   })
+);
+
+//Authentification with Gmail (API connection)
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID:
+        "152711072655-finge0ka49f8mivp8svleq043ekicdgk.apps.googleusercontent.com",
+      clientSecret: "mJmSckdWYvbYRBWB-lNPtfZM",
+      callbackURL: "/auth/google/callback",
+    },
+    (accessToken, refreshToken, profile, done) => {
+      // to see the structure of the data in received response:
+      console.log("Google account details:", profile);
+
+      User.findOne({ googleID: profile.id })
+        .then((user) => {
+          if (user) {
+            done(null, user);
+            return;
+          }
+
+          User.create({ googleID: profile.id })
+            .then((newUser) => {
+              done(null, newUser);
+            })
+            .catch((err) => done(err)); // closes User.create()
+        })
+        .catch((err) => done(err)); // closes User.findOne()
+    }
+  )
 );
 
 // Express View engine setup

@@ -6,9 +6,10 @@ const userSchema = new Schema(
     username: String,
     password: String,
     email: String,
+    googleID: String,
   },
   {
-    timestamps: true,
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
   }
 );
 
