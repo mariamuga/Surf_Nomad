@@ -73,7 +73,7 @@ app.use(flash());
 
 passport.use(
   new LocalStrategy((username, password, done) => {
-    User.findOne({ username: username })
+    User.findOne({ username: username, email: email })
       .then((found) => {
         if (found === null) {
           done(null, false, { message: "Wrong credentials" });
