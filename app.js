@@ -18,6 +18,7 @@ const LocalStrategy = require("passport-local").Strategy;
 
 const flash = require("connect-flash");
 
+// const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 mongoose
@@ -92,7 +93,37 @@ passport.use(
 );
 
 //Authentification with Gmail (API connection)
-passport.use(
+/* passport.use(
+  new GoogleStrategy(
+    {
+      clientID:
+        "152711072655-finge0ka49f8mivp8svleq043ekicdgk.apps.googleusercontent.com",
+      clientSecret: "mJmSckdWYvbYRBWB-lNPtfZM",
+      callbackURL: "http://localhost:3000/auth/google/callback",
+      passReqToCallback: true,
+    },
+    (request, accessToken, refreshToken, profile, done) => {
+      console.log("Google account details:", profile);
+
+      User.findOne({ googleID: profile.id })
+        .then((user) => {
+          if (user) {
+            done(null, user);
+            return;
+          }
+
+          User.create({ googleID: profile.id })
+            .then((newUser) => {
+              done(null, newUser);
+            })
+            .catch((err) => done(err)); // closes User.create()
+        })
+        .catch((err) => done(err));
+    }
+  )
+); */
+
+ passport.use(
   new GoogleStrategy(
     {
       clientID:
@@ -120,7 +151,7 @@ passport.use(
         .catch((err) => done(err)); // closes User.findOne()
     }
   )
-);
+); 
 
 // Express View engine setup
 
