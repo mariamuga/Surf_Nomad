@@ -23,6 +23,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
+    rating: 2,
   },
   {
     name: "Playa la Vega",
@@ -39,6 +40,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
+    rating: 0,
   },
   {
     name: "Playa España",
@@ -55,6 +57,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "S",
     swell_range: "0.91 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Playa de San Antolin",
@@ -71,6 +74,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
+    rating: 2,
   },
   {
     name: "Playa del Espartal",
@@ -87,6 +91,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Playa de Xagó",
@@ -103,6 +108,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Playa de Verdicio",
@@ -119,6 +125,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
+    rating: 2,
   },
   {
     name: "Tapia de Casariego",
@@ -135,6 +142,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.91 - 2.44 m",
+    rating: 3,
   },
   // 4 spots Cantabria
   {
@@ -152,6 +160,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
+    rating: 1,
   },
   {
     name: "Playa de Somo",
@@ -168,6 +177,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
+    rating: 2,
   },
   {
     name: "Liencres",
@@ -184,6 +194,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
+    rating: 2,
   },
   {
     name: "Playa de Meron",
@@ -200,6 +211,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.61 - 1.83 m",
+    rating: 2,
   },
   // 6 spots Galicia
   {
@@ -217,9 +229,10 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
+    rating: 1,
   },
   {
-    name: "Praia de San Xurxo",
+    name: "Praia de San Xorxe",
     description:
       "Beautiful crescent of west facing beachbreak, offering some S wind protection for the lefts in the southern corner. Various other peaks along length of beach, best at low to mid-tide. Rips. - Sometimes crowded. Plenty of space on the beach and in the carpark. Lifeguard, showers, camping nearby and squeaky clean water.",
     location: {
@@ -233,6 +246,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "W",
     swell_range: "0.91 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Praia de Razo",
@@ -249,6 +263,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "SE",
     swell_range: "0.90 - 2.44 m",
+    rating: 2,
   },
   {
     name: "Barrañan",
@@ -265,6 +280,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
+    rating: 2,
   },
   {
     name: "Caion",
@@ -281,6 +297,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.90 - 2.44 m",
+    rating: 3,
   },
   {
     name: "Playa del Orzán",
@@ -297,6 +314,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "SW",
     swell_range: "0.61 - 1.83 m",
+    rating: 3,
   },
   // 4 spots Pais Vasco
   {
@@ -314,6 +332,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SW",
     swell_range: "0.91 - 3.66 m",
+    rating: 1,
   },
   {
     name: "Zurriola Hondartza",
@@ -330,6 +349,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.30 - 1.82 m",
+    rating: 1,
   },
   {
     name: "Zarautz",
@@ -346,6 +366,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "S",
     swell_range: "0.30 - 1.82 m",
+    rating: 1,
   },
   {
     name: "Laga",
@@ -362,6 +383,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "S",
     swell_range: "0.61 - 1.82 m",
+    rating: 1,
   },
   // 3 spots Andalucia
   {
@@ -379,6 +401,7 @@ const spots = [
     swell_direction: "S - NW",
     wind_direction: "E",
     swell_range: "0.30 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Barbate",
@@ -395,6 +418,7 @@ const spots = [
     swell_direction: "SW - NW",
     wind_direction: "NE",
     swell_range: "0.91 - 1.83 m",
+    rating: 1,
   },
   {
     name: "Los Caños",
@@ -411,6 +435,7 @@ const spots = [
     swell_direction: "SW - NW",
     wind_direction: "NE",
     swell_range: "0.91 - 1.83 m",
+    rating: 1,
   },
   // 5 spots Canary Islands
   {
@@ -428,6 +453,7 @@ const spots = [
     swell_direction: "SE - SW",
     wind_direction: "NE",
     swell_range: "0.61 - 2.44 m",
+    rating: 1,
   },
   {
     name: "La Izquierda",
@@ -444,6 +470,7 @@ const spots = [
     swell_direction: "W - NW",
     wind_direction: "E",
     swell_range: "0.61 - 3.66 m",
+    rating: 1,
   },
   {
     name: "Punta Blanca",
@@ -460,6 +487,7 @@ const spots = [
     swell_direction: "NW - N",
     wind_direction: "E",
     swell_range: "0.61 - 3.66 m",
+    rating: 1,
   },
   {
     name: "La Santa",
@@ -476,6 +504,7 @@ const spots = [
     swell_direction: "SW - NW",
     wind_direction: "SE",
     swell_range: "1.22 - 4.57 m",
+    rating: 1,
   },
   {
     name: "Playa del Confital",
@@ -492,6 +521,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "E",
     swell_range: "1.22 - 4.57 m",
+    rating: 1,
   },
 
   // 11 spots Portugal
@@ -511,6 +541,7 @@ const spots = [
     swell_direction: "W - NW",
     wind_direction: "SE",
     swell_range: "1.52 - 4.5 m",
+    rating: 2,
   },
   {
     name: "Jardim do Mar",
@@ -527,6 +558,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "N",
     swell_range: "1.82 - 9.1 m",
+    rating: 1,
   },
   // 2 spots Peniche
   {
@@ -544,6 +576,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
+    rating: 1,
   },
   {
     name: "Supertubos",
@@ -560,6 +593,7 @@ const spots = [
     swell_direction: "S - NW",
     wind_direction: "NE",
     swell_range: "0.91 - 3.1 m",
+    rating: 2,
   },
   // 3 spots Lisbon
   {
@@ -577,6 +611,7 @@ const spots = [
     swell_direction: "SW - NW",
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
+    rating: 1,
   },
   {
     name: "Praia Do Guincho",
@@ -593,6 +628,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
+    rating: 1,
   },
   {
     name: "Praia Grande Sintra",
@@ -609,6 +645,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 3.1 m",
+    rating: 1,
   },
   // 4 spots Algarve
   {
@@ -626,6 +663,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 2.44 m",
+    rating: 1,
   },
   {
     name: "Carrapateira",
@@ -642,6 +680,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 2.44 m",
+    rating: 3,
   },
   {
     name: "Arrifana",
@@ -658,6 +697,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "1.82 - 5.49 m",
+    rating: 2,
   },
   {
     name: "Praia da Bordeira",
@@ -674,6 +714,7 @@ const spots = [
     swell_direction: "SW - N",
     wind_direction: "E",
     swell_range: "0.61 - 3.05 m",
+    rating: 3,
   },
 
   // 3 spots France
@@ -692,6 +733,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.31 - 2.4 m",
+    rating: 2,
   },
   {
     name: "Hossegor (La Graviere)",
@@ -708,6 +750,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "E",
     swell_range: "0.91 - 4.5 m",
+    rating: 2,
   },
   {
     name: "Capbreton",
@@ -724,6 +767,7 @@ const spots = [
     swell_direction: "W - N",
     wind_direction: "SE",
     swell_range: "0.61 - 3.6 m",
+    rating: 2,
   },
 
   // 18 spots Indonesia
@@ -742,6 +786,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "E",
     swell_range: "0.91 - 3.5 m",
+    rating: 3,
   },
   {
     name: "Keramas",
@@ -758,6 +803,7 @@ const spots = [
     swell_direction: "S - SW",
     wind_direction: "NW",
     swell_range: "0.61 - 3.6 m",
+    rating: 3,
   },
   {
     name: "Lacerations",
@@ -774,6 +820,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "E",
     swell_range: "0.91 - 3.0 m",
+    rating: 4,
   },
   {
     name: "Padangbai",
@@ -790,6 +837,7 @@ const spots = [
     swell_direction: "S - SW",
     wind_direction: "W",
     swell_range: "0.91 - 3.6 m",
+    rating: 5,
   },
   {
     name: "Playgrounds",
@@ -806,6 +854,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "E",
     swell_range: "0.60 - 2.4 m",
+    rating: 3,
   },
   {
     name: "Sanur",
@@ -822,6 +871,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "W",
     swell_range: "1.81 - 4.5 m",
+    rating: 3,
   },
   {
     name: "Serangan",
@@ -838,6 +888,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "NW",
     swell_range: "0.64 - 4.5 m",
+    rating: 2,
   },
   {
     name: "Shipwrecks - Lembongan",
@@ -854,6 +905,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "E",
     swell_range: "0.91 - 3.0 m",
+    rating: 3,
   },
   {
     name: "Sri Lanka",
@@ -870,6 +922,7 @@ const spots = [
     swell_direction: "S - SW",
     wind_direction: "SW",
     swell_range: "1.23 - 3.6 m",
+    rating: 2,
   },
   {
     name: "Tanjung Sari",
@@ -886,6 +939,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "NW",
     swell_range: "0.91 - 3.0 m",
+    rating: 3,
   },
   {
     name: "Balangan",
@@ -902,6 +956,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "SW",
     swell_range: "1.21 - 4.5 m",
+    rating: 5,
   },
   {
     name: "Bingin",
@@ -918,6 +973,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "SE",
     swell_range: "0.91 - 2.4 m",
+    rating: 4,
   },
   {
     name: "Dreamland",
@@ -934,6 +990,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "SE",
     swell_range: "0.91 - 2.4 m",
+    rating: 5,
   },
   {
     name: "Green Ball",
@@ -950,6 +1007,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "NW",
     swell_range: "0.61 - 2.4 m",
+    rating: 1,
   },
   {
     name: "Impossibles",
@@ -966,6 +1024,7 @@ const spots = [
     swell_direction: "S - SW",
     wind_direction: "SE",
     swell_range: "1.21 - 3.6 m",
+    rating: 4,
   },
   {
     name: "Nyang Nyang",
@@ -982,6 +1041,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "NE",
     swell_range: "0.61 - 1.8 m",
+    rating: 4,
   },
   {
     name: "Padang Padang",
@@ -998,6 +1058,7 @@ const spots = [
     swell_direction: "S - SW",
     wind_direction: "SE",
     swell_range: "0.61 - 3.6 m",
+    rating: 4,
   },
   {
     name: "Uluwatu",
@@ -1014,6 +1075,7 @@ const spots = [
     swell_direction: "S - W",
     wind_direction: "SE",
     swell_range: "0.61 - 4.5 m",
+    rating: 4,
   },
 ];
 

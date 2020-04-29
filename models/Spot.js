@@ -15,6 +15,7 @@ const spotSchema = new Schema({
   swell_direction: String,
   wind_direction: String,
   swell_range: String,
+  rating: Number,
 });
 
 const Spot = mongoose.model("Spot", spotSchema);
