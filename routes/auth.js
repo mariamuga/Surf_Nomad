@@ -10,8 +10,8 @@ const bcryptSalt = 10;
 
 const ensureLogin = require("connect-ensure-login");
 
-router.get("/private-page", ensureLogin.ensureLoggedIn(), (req, res) => {
-  res.render("auth/private", { user: req.user });
+router.get("/overview", ensureLogin.ensureLoggedIn(), (req, res) => {
+  res.render("/overview", { user: req.user });
 });
 
 router.get("/signup", (req, res) => {
@@ -84,7 +84,7 @@ router.post(
   "/login",
   passport.authenticate("local", {
     // here you can add your own routes
-    successRedirect: "/private-page",
+    successRedirect: "/overview",
     failureRedirect: "/login",
     // this is set
     failureFlash: true,

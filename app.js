@@ -145,7 +145,7 @@ const index = require("./routes/index");
 app.use("/", index);
 
 const spotsRoute = require("./routes/spots");
-app.use("/spots", spotsRoute);
+app.use("/overview", spotsRoute);
 
 // Routes middleware goes here
 const authRoutes = require("./routes/auth");
