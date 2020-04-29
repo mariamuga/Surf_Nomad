@@ -6,4 +6,6 @@ router.get("/", (req, res, next) => {
   res.render("home");
 });
 
+// this is a trial following the video
+
 module.exports = router;
