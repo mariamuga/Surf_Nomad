@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
 
-const User = require("./models/User.model");
+const User = require("./models/User");
 
 const session = require("express-session");
 const bcrypt = require("bcrypt");
@@ -75,7 +75,7 @@ app.use(flash());
 
 passport.use(
   new LocalStrategy((username, password, done) => {
-    User.findOne({ username: username, email: email })
+    User.findOne({ username: username })
       .then((found) => {
         if (found === null) {
           done(null, false, { message: "Wrong credentials" });
@@ -129,7 +129,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
 // default value for title local
-app.locals.title = "Express - Generated with IronGenerator";
+app.locals.title = "Surf Digital Nomad";
 
 // Routes middleware goes here
 const index = require("./routes/index.routes");
@@ -138,3 +138,4 @@ const authRoutes = require("./routes/auth.routes");
 app.use("/", authRoutes);
 
 module.exports = app;
+

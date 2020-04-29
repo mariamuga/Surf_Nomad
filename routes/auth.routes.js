@@ -3,7 +3,7 @@ const router = express.Router();
 
 const passport = require("passport");
 
-const User = require("../models/User.model");
+const User = require("../models/User");
 
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
@@ -56,7 +56,6 @@ router.post("/signup", (req, res, next) => {
 });
 
 //Login with Gmail 
-
 // routes/auth-routes.js
 
 router.get(
@@ -81,6 +80,8 @@ router.get(
 
 
 
+
+
 router.get("/login", (req, res, next) => {
   res.render("auth/login", { message: req.flash("error") });
 });
@@ -96,6 +97,7 @@ router.post(
     passReqToCallback: true,
   })
 );
+
 router.get("/logout", (req, res) => {
   req.logout();
   res.redirect("/login");
