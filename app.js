@@ -20,7 +20,6 @@ const flash = require("connect-flash");
 
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
-
 mongoose
   .connect("mongodb://localhost/Surf_Nomad", {
     useNewUrlParser: true,
@@ -96,8 +95,8 @@ passport.use(
 passport.use(
   new GoogleStrategy(
     {
-      clientID: CLIENT_ID,
-      clientSecret: CLIENT_SECRET,
+      clientID: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
       callbackURL: "/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
