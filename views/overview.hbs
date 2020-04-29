@@ -1,0 +1,22 @@
+<section id="spots">
+  <h1>Surfing spots</h1>
+  <h4>Results {{count}}</h4>
+  {{#each spots}}
+  <div class="spotCard">
+    <div class="cardImage" Card>
+      <img src="" alt="">
+    </div>
+    <div class="cardContent">
+      <h2 class="spotName">{{this.name}}</h2>
+      <div>
+        <h4 class="spotType">{{this.type}}</h4>
+        <h4 class="spotSeabed">{{this.seabed}}</h4>
+      </div>
+      <div>
+        <h5 class="spotRegion">{{this.location.region}}</h5>
+        <h5 class="spotCountry">{{this.location.country}}</h5>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</section>
