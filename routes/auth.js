@@ -10,8 +10,8 @@ const bcryptSalt = 10;
 
 const ensureLogin = require("connect-ensure-login");
 
-router.get("/overview", ensureLogin.ensureLoggedIn(), (req, res) => {
-  res.render("/overview", { user: req.user });
+router.get("/explore", ensureLogin.ensureLoggedIn(), (req, res) => {
+  res.render("/auth/explore", { user: req.user });
 });
 
 router.get("/signup", (req, res) => {
@@ -71,7 +71,7 @@ router.get(
 router.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    successRedirect: "/private-page",
+    successRedirect: "/explore",
     failureRedirect: "/", // here you would redirect to the login page using traditional login approach
   })
 );
@@ -84,7 +84,7 @@ router.post(
   "/login",
   passport.authenticate("local", {
     // here you can add your own routes
-    successRedirect: "/overview",
+    successRedirect: "/explore",
     failureRedirect: "/login",
     // this is set
     failureFlash: true,
