@@ -8,6 +8,21 @@ const hbs = require("hbs");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
+const app_name = require("./package.json").name;
+const debug = require("debug")(
+  `${app_name}:${path.basename(__filename).split(".")[0]}`
+);
+const User = require("./models/User");
+// Login & Signup incription
+const session = require("express-session");
+const bcrypt = require("bcrypt");
+const passport = require("passport");
+const LocalStrategy = require("passport-local").Strategy;
+const flash = require("connect-flash");
+
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
+
+const app = express();
 
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
@@ -25,23 +40,6 @@ mongoose
     console.error("Error connecting to mongo", err);
   });
 
-const app_name = require("./package.json").name;
-const debug = require("debug")(
-  `${app_name}:${path.basename(__filename).split(".")[0]}`
-);
-const User = require("./models/User");
-
-const session = require("express-session");
-const bcrypt = require("bcrypt");
-const passport = require("passport");
-const LocalStrategy = require("passport-local").Strategy;
-
-const flash = require("connect-flash");
-
-const GoogleStrategy = require("passport-google-oauth20").Strategy;
-
-const app = express();
-
 // Middleware Setup
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -49,7 +47,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.use(
   require("node-sass-middleware")({
     src: path.join(__dirname, "public"),
@@ -57,8 +54,8 @@ app.use(
     sourceMap: true,
   })
 );
-// configure the express middleware, set the secret key
 
+// configure the express middleware, set the secret key
 app.use(
   session({
     secret: "our-passport-local-strategy-app",
@@ -144,15 +141,14 @@ app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 // default value for title local
 app.locals.title = "Surf Digital Nomad";
 
-const index = require("./routes/index.routes");
+const index = require("./routes/index");
 app.use("/", index);
 
 const spotsRoute = require("./routes/spots");
 app.use("/spots", spotsRoute);
 
 // Routes middleware goes here
-
-const authRoutes = require("./routes/auth.routes");
+const authRoutes = require("./routes/auth");
 app.use("/", authRoutes);
 
 module.exports = app;

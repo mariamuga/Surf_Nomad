@@ -55,7 +55,7 @@ router.post("/signup", (req, res, next) => {
   });
 });
 
-//Login with Gmail 
+//Login with Gmail
 // routes/auth-routes.js
 
 router.get(
@@ -63,24 +63,18 @@ router.get(
   passport.authenticate("google", {
     scope: [
       "https://www.googleapis.com/auth/userinfo.profile",
-      "https://www.googleapis.com/auth/userinfo.email"
-    ]
+      "https://www.googleapis.com/auth/userinfo.email",
+    ],
   })
 );
-
 
 router.get(
   "/auth/google/callback",
   passport.authenticate("google", {
     successRedirect: "/private-page",
-    failureRedirect: "/" // here you would redirect to the login page using traditional login approach
+    failureRedirect: "/", // here you would redirect to the login page using traditional login approach
   })
 );
-
-
-
-
-
 
 router.get("/login", (req, res, next) => {
   res.render("auth/login", { message: req.flash("error") });
