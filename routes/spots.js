@@ -6,8 +6,9 @@ const router = express.Router();
 router.get("/", (req, res) => {
   Spot.find()
     .then((allSpots) => {
-      //console.log("allSpots: ", allSpots);
-      res.send(allSpots);
+      // console.log("allSpots: ", allSpots);
+      const count = allSpots.length;
+      res.render("overview", { spots: allSpots, count });
     })
     .catch((error) => console.log("Error while getting spots from DB: ", error));
 });
