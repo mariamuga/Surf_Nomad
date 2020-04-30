@@ -2,44 +2,50 @@
 <main>
   <section id="filter">
     <form action="/explore" method="GET">
-      <select id="breaktypeDropdown" name="breaktypes">
-        <option value="">Select break type</option>
-        <option value="Peaky Beachbreak" value="Right-hand Pointbreak" value="Left-hand Pointbreak" value="Peaky Reef">
-          All
-          types</option>
-        <option value="Peaky Beachbreak">Peaky Beachbreak</option>
-        <option value="Right-hand Pointbreak">Right-hand Pointbreak</option>
-        <option value="Left-hand Pointbreak">Left-hand Pointbreak</option>
-        <option value="Peaky Reef">Peaky Reef</option>
-      </select>
-      <select id="seabedDropdown" name="seabed">
-        <option value="">Select seabed type</option>
-        <option value="Sand" value="Uneven Reef" value="Live Coral" value="Dead Coral" value="Rock Ledge"
-          value="Boulders">All types</option>
-        <option value="Sand">Sand</option>
-        <option value="Uneven Reef">Uneven Reef</option>
-        <option value="Live Coral">Live Coral</option>
-        <option value="Dead Coral">Dead Coral</option>
-        <option value="Rock Ledge">Rock Ledge</option>
-        <option value="Boulders">Boulders</option>
-      </select>
+      <div class="custom-select">
+        <select id="breaktypeDropdown" name="breaktypes">
+          <option value="">Select break type</option>
+          <option value="All Types">
+            All types</option>
+          <option value="Peaky Beachbreak">Peaky Beachbreak</option>
+          <option value="Right-hand Pointbreak">Right-hand Pointbreak</option>
+          <option value="Left-hand Pointbreak">Left-hand Pointbreak</option>
+          <option value="Peaky Reef">Peaky Reef</option>
+        </select>
+      </div>
+      <div class="custom-select">
+        <select id="seabedDropdown" name="seabed">
+          <option value="">Select seabed type</option>
+          <option value="Sand" value="Uneven Reef" value="Live Coral" value="Dead Coral" value="Rock Ledge"
+            value="Boulders">All types</option>
+          <option value="Sand">Sand</option>
+          <option value="Uneven Reef">Uneven Reef</option>
+          <option value="Live Coral">Live Coral</option>
+          <option value="Dead Coral">Dead Coral</option>
+          <option value="Rock Ledge">Rock Ledge</option>
+          <option value="Boulders">Boulders</option>
+        </select>
+      </div>
+
       <button method="GET">Search</button>
     </form>
   </section>
 
   <section id="spots">
-    <h1>Surfing spots</h1>
-    <h4>Results {{count}}</h4>
+    <div id="top">
+      <h1>Surfing spots</h1>
+      <h4>Results {{count}}</h4>
+    </div>
 
     {{#each spots}}
     <div class="spotCard">
-      <a href="/explore" class="cardImage" style="background-image: url({{this.img}});">
+      <a href="/explore/{{this.name}}" class="cardImage" style="background-image: url({{this.img}});">
       </a>
       <div class="cardContent">
         <div>
           <div>
-            <a href="/explore">
-              <h2 class="spotName">{{this.name}}</h2>
+            <a href="/explore/{{this.name}}">
+              <h2 class=" spotName">{{this.name}}</h2>
             </a>
             <div class="tagsCard">
               <h4 class="spotType">{{this.type}}</h4>
@@ -59,3 +65,78 @@
   </section>
 </main>
 <aside id="map"> map</aside>
+
+<script>
+  var x, i, j, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select");
+  for (i = 0; i < x.length; i++) {
+    selElmnt = x[i].getElementsByTagName("select")[0];
+    /*for each element, create a new DIV that will act as the selected item:*/
+    a = document.createElement("DIV");
+    a.setAttribute("class", "select-selected");
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+    /*for each element, create a new DIV that will contain the option list:*/
+    b = document.createElement("DIV");
+    b.setAttribute("class", "select-items select-hide");
+    for (j = 1; j < selElmnt.length; j++) {
+      /*for each option in the original select element,
+      create a new DIV that will act as an option item:*/
+      c = document.createElement("DIV");
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener("click", function (e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+      });
+      b.appendChild(c);
+    }
+    x[i].appendChild(b);
+    a.addEventListener("click", function (e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+  }
+  function closeAllSelect(elmnt) {
+    /*a function that will close all select boxes in the document,
+    except the current select box:*/
+    var x, y, i, arrNo = [];
+    x = document.getElementsByClassName("select-items");
+    y = document.getElementsByClassName("select-selected");
+    for (i = 0; i < y.length; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i)
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (i = 0; i < x.length; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+      }
+    }
+  }
+  /*if the user clicks anywhere outside the select box,
+  then close all select boxes:*/
+  document.addEventListener("click", closeAllSelect);
+</script>

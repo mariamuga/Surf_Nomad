@@ -13,9 +13,14 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: rgba(21, 39, 41, 0.9); }
 
+<<<<<<< HEAD
 /* HOME STYLE
+=======
+/* HOME
+>>>>>>> 46ba6a184265a88f59fac4019be298e0a8bd648d
 =====================*/
 #homeIntro {
   display: flex;
@@ -24,15 +29,19 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(21, 39, 41, 0.3); */
+  background: rgba(250, 255, 254, 0.01);
   color: #fafffe;
-  padding: 20px; }
+  padding: 20px;
+  position: relative;
+  z-index: 1000; }
 
 #homeVideo {
   overflow: hidden;
   position: fixed;
   top: 0;
-  z-index: -999; }
+  z-index: 100;
+  background-color: #fff; }
 
 video {
   height: 100vh; }
@@ -41,7 +50,12 @@ h1 {
   font-size: 30px; }
 
 #homeButtons {
-  margin: 80px; }
+  margin: 80px;
+  text-align: center; }
+
+#homeButtons a {
+  display: block;
+  margin-top: 16px; }
 
 .myBtnLogin {
   width: 200px;
@@ -50,24 +64,63 @@ h1 {
   border: none;
   background: #65c0c7;
   color: #fafffe;
-  margin-right: 30px; }
+  border-radius: 4px; }
 
 .myBtnSignup {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px 16px;
+  border: 1px solid #65c0c7;
+  border-radius: 4px;
+  color: #65c0c7; }
+
+.myBtnLogin:hover,
+.myBtnSignup:hover {
+  background: #fafffe;
+  color: #65c0c7; }
+
+/* LOGIN
+=====================*/
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  background: rgba(21, 39, 41, 0.5);
+  color: #fafffe;
+  padding: 20px; }
+
+input {
+  margin: 7px;
+  padding: 5px; }
+
+#login {
   width: 200px;
   font-size: 18px;
   padding: 10px 16px;
   border: none;
   background: #65c0c7;
   color: #fafffe;
-  margin-right: 30px; }
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-left: 35px; }
 
-.myBtnLogin:hover {
-  background: #ddd;
-  color: #152729; }
+p {
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  background: rgba(21, 39, 41, 0.5);
+  color: #fafffe; }
 
-.myBtnSignup:hover {
-  background: #ddd;
-  color: #152729; }
+#google {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(21, 39, 41, 0.5);
+  color: #fafffe;
+  padding: 20px; }
 
 /* HEADER - NAV
 =====================*/
@@ -111,13 +164,89 @@ nav div .navLink h6 {
 /* MAIN
 =====================*/
 main {
+  margin-left: 88px;
   padding: 32px;
   width: 50vw; }
+
+/* DROPDOWN */
+.custom-select {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8); }
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/ }
+
+.select-selected {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent; }
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
+  top: 7px; }
+
+/*style the items (options), including the selected item:*/
+.select-selected {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none; }
+
+.select-items div {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none; }
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #edeeee;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none; }
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/* SPOTS
+=====================*/
+#spots div#top h1 {
+  display: inline-block;
+  margin-top: 48px;
+  color: rgba(21, 39, 41, 0.8); }
+
+#spots div#top h4 {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: 500;
+  color: rgba(21, 39, 41, 0.7); }
 
 .spotCard {
   display: flex;
   flex-direction: row;
-  margin-top: 16px;
+  margin-top: 32px;
   padding: 8px;
   border-radius: 4px; }
 
@@ -165,7 +294,7 @@ a:hover {
 
 .divider {
   position: relative;
-  top: 0px;
+  top: 8px;
   margin: 16px auto 0;
   height: 1px;
   width: 100%;

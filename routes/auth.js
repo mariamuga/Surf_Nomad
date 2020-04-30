@@ -15,7 +15,7 @@ router.get("/explore", ensureLogin.ensureLoggedIn(), (req, res) => {
 });
 
 router.get("/signup", (req, res) => {
-  res.render("auth/signup");
+  res.render("auth/signup", { layout: false });
 });
 
 router.post("/signup", (req, res, next) => {
@@ -44,7 +44,7 @@ router.post("/signup", (req, res, next) => {
             if (err) {
               next(err);
             } else {
-              res.redirect("/");
+              res.redirect("/explore");
             }
           });
         })
@@ -77,7 +77,7 @@ router.get(
 );
 
 router.get("/login", (req, res, next) => {
-  res.render("auth/login", { message: req.flash("error") });
+  res.render("auth/login", { message: req.flash("error"), layout: false });
 });
 
 router.post(

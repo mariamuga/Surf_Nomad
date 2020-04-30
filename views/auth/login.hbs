@@ -1,29 +1,45 @@
-<form action="/login" method="POST" id="form">
-  <h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-  <label for="username">Username</label>
-  <input type="text" name="username">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
 
-  <label for="email">Email</label>
-  <input type="text" name="email">
+<body>
+  <form action="/login" method="POST" id="form">
+    <h2>Login</h2>
 
-  <label for="password">Password</label>
-  <input type="password" name="password">
+    <label for="username">Username</label>
+    <input type="text" name="username">
 
-  {{#if errorMessage }}
-  <div class="error-message">{{ errorMessage }}</div>
-  {{/if}}
+    <label for="email">Email</label>
+    <input type="text" name="email">
 
-  <button>Login</button>
+    <label for="password">Password</label>
+    <input type="password" name="password">
 
-</form>
+    {{#if errorMessage }}
+    <div class="error-message">{{ errorMessage }}</div>
+    {{/if}}
 
-<p>Or</p>
+    <button id="login">Login</button>
 
-{{#unless user}}
-<div>
-  <a href="/auth/google">Login With Google</a>
-</div>
-{{/unless}}
+  </form>
 
-<a href="/">Back Home</a>
+  <p>Or</p>
+
+  {{#unless user}}
+  <div id="google">
+    <a href="/auth/google">Login With Google</a>
+  </div>
+  {{/unless}}
+
+  <a href="/">Back Home</a>
+</body>
+
+</html>
