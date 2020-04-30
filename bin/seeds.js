@@ -24,7 +24,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
     rating: 2,
-    img: "public/images/Spot_Photos/01-Ribadesella.jpg",
+    img: "/images/Spot_Photos/01-Ribadesella.jpg",
   },
   {
     name: "Playa la Vega",
@@ -42,7 +42,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
     rating: 0,
-    img: "public/images/Spot_Photos/02-Playa_Vega.jpeg",
+    img: "/images/Spot_Photos/02-Playa_Vega.jpeg",
   },
   {
     name: "Playa España",
@@ -60,7 +60,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.91 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/03-Playa_Espana.jpeg",
+    img: "/images/Spot_Photos/03-Playa_Espana.jpeg",
   },
   {
     name: "Playa de San Antolin",
@@ -78,7 +78,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
     rating: 2,
-    img: "public/images/Spot_Photos/04-San_Antolin.jpeg",
+    img: "/images/Spot_Photos/04-San_Antolin.jpeg",
   },
   {
     name: "Playa del Espartal",
@@ -96,7 +96,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/05-Espartal.jpeg",
+    img: "/images/Spot_Photos/05-Espartal.jpeg",
   },
   {
     name: "Playa de Xagó",
@@ -114,7 +114,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/06-Xago.jpeg",
+    img: "/images/Spot_Photos/06-Xago.jpeg",
   },
   {
     name: "Playa de Verdicio",
@@ -132,7 +132,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
     rating: 2,
-    img: "public/images/Spot_Photos/07-Verdicio.jpg",
+    img: "/images/Spot_Photos/07-Verdicio.jpg",
   },
   {
     name: "Tapia de Casariego",
@@ -150,7 +150,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.91 - 2.44 m",
     rating: 3,
-    img: "public/images/Spot_Photos/08-Casariego.jpeg",
+    img: "/images/Spot_Photos/08-Casariego.jpeg",
   },
   // 4 spots Cantabria
   {
@@ -169,7 +169,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
     rating: 1,
-    img: "public/images/Spot_Photos/09-Langre.jpeg",
+    img: "/images/Spot_Photos/09-Langre.jpeg",
   },
   {
     name: "Playa de Somo",
@@ -187,7 +187,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
     rating: 2,
-    img: "public/images/Spot_Photos/10-Somo.jpeg",
+    img: "/images/Spot_Photos/10-Somo.jpeg",
   },
   {
     name: "Liencres",
@@ -205,7 +205,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 2.44 m",
     rating: 2,
-    img: "public/images/Spot_Photos/11-Liencres.jpeg",
+    img: "/images/Spot_Photos/11-Liencres.jpeg",
   },
   {
     name: "Playa de Meron",
@@ -223,7 +223,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.61 - 1.83 m",
     rating: 2,
-    img: "public/images/Spot_Photos/12-Meron.jpeg",
+    img: "/images/Spot_Photos/12-Meron.jpeg",
   },
   // 6 spots Galicia
   {
@@ -242,7 +242,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/13-Doninos.jpeg",
+    img: "/images/Spot_Photos/13-Doninos.jpeg",
   },
   {
     name: "Praia de San Xorxe",
@@ -260,7 +260,7 @@ const spots = [
     wind_direction: "W",
     swell_range: "0.91 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/14-Xorxe.jpg",
+    img: "/images/Spot_Photos/14-Xorxe.jpg",
   },
   {
     name: "Praia de Razo",
@@ -278,7 +278,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.90 - 2.44 m",
     rating: 2,
-    img: "public/images/Spot_Photos/15-Razo.jpeg",
+    img: "/images/Spot_Photos/15-Razo.jpeg",
   },
   {
     name: "Barrañan",
@@ -296,7 +296,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 1.83 m",
     rating: 2,
-    img: "public/images/Spot_Photos/16-Barranan.jpg",
+    img: "/images/Spot_Photos/16-Barranan.jpg",
   },
   {
     name: "Caion",
@@ -314,7 +314,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.90 - 2.44 m",
     rating: 3,
-    img: "public/images/Spot_Photos/17-Caion.jpg",
+    img: "/images/Spot_Photos/17-Caion.jpg",
   },
   {
     name: "Playa del Orzán",
@@ -332,7 +332,7 @@ const spots = [
     wind_direction: "SW",
     swell_range: "0.61 - 1.83 m",
     rating: 3,
-    img: "public/images/Spot_Photos/18-Orzan.jpg",
+    img: "/images/Spot_Photos/18-Orzan.jpg",
   },
   // 4 spots Pais Vasco
   {
@@ -351,7 +351,7 @@ const spots = [
     wind_direction: "SW",
     swell_range: "0.91 - 3.66 m",
     rating: 1,
-    img: "public/images/Spot_Photos/19-Mundaka.jpeg",
+    img: "/images/Spot_Photos/19-Mundaka.jpeg",
   },
   {
     name: "Zurriola Hondartza",
@@ -369,7 +369,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.30 - 1.82 m",
     rating: 1,
-    img: "public/images/Spot_Photos/20-Zurriola.jpeg",
+    img: "/images/Spot_Photos/20-Zurriola.jpeg",
   },
   {
     name: "Zarautz",
@@ -387,7 +387,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.30 - 1.82 m",
     rating: 1,
-    img: "public/images/Spot_Photos/21-Zarautz.jpeg",
+    img: "/images/Spot_Photos/21-Zarautz.jpeg",
   },
   {
     name: "Laga",
@@ -405,7 +405,7 @@ const spots = [
     wind_direction: "S",
     swell_range: "0.61 - 1.82 m",
     rating: 1,
-    img: "public/images/Spot_Photos/22-Laga.jpeg",
+    img: "/images/Spot_Photos/22-Laga.jpeg",
   },
   // 3 spots Andalucia
   {
@@ -424,7 +424,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.30 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/23-Palmar.jpeg",
+    img: "/images/Spot_Photos/23-Palmar.jpeg",
   },
   {
     name: "Barbate",
@@ -442,7 +442,7 @@ const spots = [
     wind_direction: "NE",
     swell_range: "0.91 - 1.83 m",
     rating: 1,
-    img: "public/images/Spot_Photos/24-Barbate.jpeg",
+    img: "/images/Spot_Photos/24-Barbate.jpeg",
   },
   {
     name: "Los Caños",
@@ -460,7 +460,7 @@ const spots = [
     wind_direction: "NE",
     swell_range: "0.91 - 1.83 m",
     rating: 1,
-    img: "public/images/Spot_Photos/25-Canos.jpeg",
+    img: "/images/Spot_Photos/25-Canos.jpeg",
   },
   // 5 spots Canary Islands
   {
@@ -479,7 +479,7 @@ const spots = [
     wind_direction: "NE",
     swell_range: "0.61 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/26-Galletas.jpeg",
+    img: "/images/Spot_Photos/26-Galletas.jpeg",
   },
   {
     name: "La Izquierda",
@@ -497,7 +497,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 3.66 m",
     rating: 1,
-    img: "public/images/Spot_Photos/27-Izquierda.jpeg",
+    img: "/images/Spot_Photos/27-Izquierda.jpeg",
   },
   {
     name: "Punta Blanca",
@@ -515,7 +515,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 3.66 m",
     rating: 1,
-    img: "public/images/Spot_Photos/28-Blanca.jpeg",
+    img: "/images/Spot_Photos/28-Blanca.jpeg",
   },
   {
     name: "La Santa",
@@ -533,7 +533,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "1.22 - 4.57 m",
     rating: 1,
-    img: "public/images/Spot_Photos/29-Santa.jpeg",
+    img: "/images/Spot_Photos/29-Santa.jpeg",
   },
   {
     name: "Playa del Confital",
@@ -551,7 +551,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "1.22 - 4.57 m",
     rating: 1,
-    img: "public/images/Spot_Photos/30-Confital.jpeg",
+    img: "/images/Spot_Photos/30-Confital.jpeg",
   },
 
   // 11 spots Portugal
@@ -572,7 +572,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "1.52 - 4.5 m",
     rating: 2,
-    img: "public/images/Spot_Photos/31-Tristao.jpg",
+    img: "/images/Spot_Photos/31-Tristao.jpg",
   },
   {
     name: "Jardim do Mar",
@@ -590,7 +590,7 @@ const spots = [
     wind_direction: "N",
     swell_range: "1.82 - 9.1 m",
     rating: 1,
-    img: "public/images/Spot_Photos/32-Jardim_Do_Mar.jpeg",
+    img: "/images/Spot_Photos/32-Jardim_Do_Mar.jpeg",
   },
   // 2 spots Peniche
   {
@@ -609,7 +609,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
     rating: 1,
-    img: "public/images/Spot_Photos/33-Foz_Do_Arelho.jpeg",
+    img: "/images/Spot_Photos/33-Foz_Do_Arelho.jpeg",
   },
   {
     name: "Supertubos",
@@ -627,7 +627,7 @@ const spots = [
     wind_direction: "NE",
     swell_range: "0.91 - 3.1 m",
     rating: 2,
-    img: "public/images/Spot_Photos/34-Supertubos.jpeg",
+    img: "/images/Spot_Photos/34-Supertubos.jpeg",
   },
   // 3 spots Lisbon
   {
@@ -646,7 +646,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
     rating: 1,
-    img: "public/images/Spot_Photos/35-Macas.jpg",
+    img: "/images/Spot_Photos/35-Macas.jpg",
   },
   {
     name: "Praia Do Guincho",
@@ -664,7 +664,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 2.4 m",
     rating: 1,
-    img: "public/images/Spot_Photos/36-Guincho.jpeg",
+    img: "/images/Spot_Photos/36-Guincho.jpeg",
   },
   {
     name: "Praia Grande Sintra",
@@ -682,7 +682,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 3.1 m",
     rating: 1,
-    img: "public/images/Spot_Photos/37-Sintra.jpeg",
+    img: "/images/Spot_Photos/37-Sintra.jpeg",
   },
   // 4 spots Algarve
   {
@@ -701,7 +701,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 2.44 m",
     rating: 1,
-    img: "public/images/Spot_Photos/38-Cordoama.jpeg",
+    img: "/images/Spot_Photos/38-Cordoama.jpeg",
   },
   {
     name: "Carrapateira",
@@ -719,7 +719,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 2.44 m",
     rating: 3,
-    img: "public/images/Spot_Photos/39-Carrapateira.jpeg",
+    img: "/images/Spot_Photos/39-Carrapateira.jpeg",
   },
   {
     name: "Arrifana",
@@ -737,7 +737,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "1.82 - 5.49 m",
     rating: 2,
-    img: "public/images/Spot_Photos/40-Arrifana.jpeg",
+    img: "/images/Spot_Photos/40-Arrifana.jpeg",
   },
   {
     name: "Praia da Bordeira",
@@ -755,7 +755,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.61 - 3.05 m",
     rating: 3,
-    img: "public/images/Spot_Photos/41-Bordeira.jpeg",
+    img: "/images/Spot_Photos/41-Bordeira.jpeg",
   },
 
   // 3 spots France
@@ -775,7 +775,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.31 - 2.4 m",
     rating: 2,
-    img: "public/images/Spot_Photos/42-Biarritz.jpeg",
+    img: "/images/Spot_Photos/42-Biarritz.jpeg",
   },
   {
     name: "Hossegor (La Graviere)",
@@ -793,7 +793,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.91 - 4.5 m",
     rating: 2,
-    img: "public/images/Spot_Photos/43-Hossegor.jpeg",
+    img: "/images/Spot_Photos/43-Hossegor.jpeg",
   },
   {
     name: "Capbreton",
@@ -811,7 +811,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.61 - 3.6 m",
     rating: 2,
-    img: "public/images/Spot_Photos/44-Capbreton.jpeg",
+    img: "/images/Spot_Photos/44-Capbreton.jpeg",
   },
 
   // 18 spots Indonesia
@@ -831,7 +831,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.91 - 3.5 m",
     rating: 3,
-    img: "public/images/Spot_Photos/45-Ceningan.jpeg",
+    img: "/images/Spot_Photos/45-Ceningan.jpeg",
   },
   {
     name: "Keramas",
@@ -849,7 +849,7 @@ const spots = [
     wind_direction: "NW",
     swell_range: "0.61 - 3.6 m",
     rating: 3,
-    img: "public/images/Spot_Photos/46-Keramas.jpeg",
+    img: "/images/Spot_Photos/46-Keramas.jpeg",
   },
   {
     name: "Lacerations",
@@ -867,7 +867,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.91 - 3.0 m",
     rating: 4,
-    img: "public/images/Spot_Photos/47-Lancerations.jpeg",
+    img: "/images/Spot_Photos/47-Lancerations.jpeg",
   },
   {
     name: "Padangbai",
@@ -885,7 +885,7 @@ const spots = [
     wind_direction: "W",
     swell_range: "0.91 - 3.6 m",
     rating: 5,
-    img: "public/images/Spot_Photos/48-Padangbai.jpg",
+    img: "/images/Spot_Photos/48-Padangbai.jpg",
   },
   {
     name: "Playgrounds",
@@ -903,7 +903,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.60 - 2.4 m",
     rating: 3,
-    img: "public/images/Spot_Photos/49-Playgrounds.jpeg",
+    img: "/images/Spot_Photos/49-Playgrounds.jpeg",
   },
   {
     name: "Sanur",
@@ -921,7 +921,7 @@ const spots = [
     wind_direction: "W",
     swell_range: "1.81 - 4.5 m",
     rating: 3,
-    img: "public/images/Spot_Photos/50-Sanur.jpeg",
+    img: "/images/Spot_Photos/50-Sanur.jpeg",
   },
   {
     name: "Serangan",
@@ -939,7 +939,7 @@ const spots = [
     wind_direction: "NW",
     swell_range: "0.64 - 4.5 m",
     rating: 2,
-    img: "public/images/Spot_Photos/51-Serangan.jpeg",
+    img: "/images/Spot_Photos/51-Serangan.jpeg",
   },
   {
     name: "Shipwrecks - Lembongan",
@@ -957,7 +957,7 @@ const spots = [
     wind_direction: "E",
     swell_range: "0.91 - 3.0 m",
     rating: 3,
-    img: "public/images/Spot_Photos/52-Shipwreck.jpeg",
+    img: "/images/Spot_Photos/52-Shipwreck.jpeg",
   },
   {
     name: "Sri Lanka",
@@ -975,7 +975,7 @@ const spots = [
     wind_direction: "SW",
     swell_range: "1.23 - 3.6 m",
     rating: 2,
-    img: "public/images/Spot_Photos/53-Sri_Lanka.jpg",
+    img: "/images/Spot_Photos/53-Sri_Lanka.jpg",
   },
   {
     name: "Tanjung Sari",
@@ -993,7 +993,7 @@ const spots = [
     wind_direction: "NW",
     swell_range: "0.91 - 3.0 m",
     rating: 3,
-    img: "public/images/Spot_Photos/54-Tanjung_Sari.jpeg",
+    img: "/images/Spot_Photos/54-Tanjung_Sari.jpeg",
   },
   {
     name: "Balangan",
@@ -1011,7 +1011,7 @@ const spots = [
     wind_direction: "SW",
     swell_range: "1.21 - 4.5 m",
     rating: 5,
-    img: "public/images/Spot_Photos/55-Balangan.jpeg",
+    img: "/images/Spot_Photos/55-Balangan.jpeg",
   },
   {
     name: "Bingin",
@@ -1029,7 +1029,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.4 m",
     rating: 4,
-    img: "public/images/Spot_Photos/56-Bingin.jpeg",
+    img: "/images/Spot_Photos/56-Bingin.jpeg",
   },
   {
     name: "Dreamland",
@@ -1047,7 +1047,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.91 - 2.4 m",
     rating: 5,
-    img: "public/images/Spot_Photos/57-Dreamland.jpeg",
+    img: "/images/Spot_Photos/57-Dreamland.jpeg",
   },
   {
     name: "Green Ball",
@@ -1065,7 +1065,7 @@ const spots = [
     wind_direction: "NW",
     swell_range: "0.61 - 2.4 m",
     rating: 1,
-    img: "public/images/Spot_Photos/58-Green_Ball.jpeg",
+    img: "/images/Spot_Photos/58-Green_Ball.jpeg",
   },
   {
     name: "Impossibles",
@@ -1083,7 +1083,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "1.21 - 3.6 m",
     rating: 4,
-    img: "public/images/Spot_Photos/59-Impossibles.jpeg",
+    img: "/images/Spot_Photos/59-Impossibles.jpeg",
   },
   {
     name: "Nyang Nyang",
@@ -1101,7 +1101,7 @@ const spots = [
     wind_direction: "NE",
     swell_range: "0.61 - 1.8 m",
     rating: 4,
-    img: "public/images/Spot_Photos/60-Nyang.jpeg",
+    img: "/images/Spot_Photos/60-Nyang.jpeg",
   },
   {
     name: "Padang Padang",
@@ -1119,7 +1119,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.61 - 3.6 m",
     rating: 4,
-    img: "public/images/Spot_Photos/61-Padang.jpeg",
+    img: "/images/Spot_Photos/61-Padang.jpeg",
   },
   {
     name: "Uluwatu",
@@ -1137,7 +1137,7 @@ const spots = [
     wind_direction: "SE",
     swell_range: "0.61 - 4.5 m",
     rating: 4,
-    img: "public/images/Spot_Photos/62-Uluwatu.jpeg",
+    img: "/images/Spot_Photos/62-Uluwatu.jpeg",
   },
 ];
 
