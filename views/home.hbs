@@ -1,9 +1,21 @@
-<div class="homeIntro">
-  <h1>Surf spots for digital nomads</h1>
-  <h3>Find the spot best suited for you</h3>
-</div>
+<main>
 
-<div class="homeButtons">
-  <a href="./login">Login</a>
-  <a href="./signup">Sing Up</a>
-</div>
+  <div id="homeIntro">
+    <h1>Surf spots for digital nomads</h1>
+    <h3>Find the spot best suited for you</h3>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <!--<button id="myBtn" onclick="myFunction()">Pause</button>-->
+    <div id="homeButtons">
+      <a class="myBtnLogin" href="./login">Login</a>
+      <a class="myBtnSignup" href="./signup">Sing Up</a>
+    </div>
+  </div>
+
+  <div id="homeVideo">
+    <!-- The video -->
+    <video autoplay muted loop>
+      <source src="/videos/surfVideo.mp4" type="video/mp4">
+    </video>
+  </div>
+</main>
+<!-- Optional: some overlay text to describe the video -->
