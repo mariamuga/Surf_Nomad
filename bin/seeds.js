@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Spot = require("../models/Spot");
 
-mongoose.connect("mongodb://localhost/Surf_Nomad", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Surf_Nomad", {
   useNewUrlParser: true,
 });
 
