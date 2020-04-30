@@ -77,7 +77,7 @@ video {
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
   color: #fafffe;
-  padding: 20px; }
+  padding: 50px; }
 
 input {
   margin: 7px;
@@ -91,21 +91,18 @@ input {
   background: #65c0c7;
   color: #fafffe;
   margin-right: 30px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: 35px; }
 
 p {
   text-align: center;
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
-  color: #fafffe;
-  padding: 20px; }
+  color: #fafffe; }
 
 #google {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   height: 100vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
