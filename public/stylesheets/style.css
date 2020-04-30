@@ -13,7 +13,6 @@
   box-sizing: border-box; }
 
 body {
-<<<<<<< HEAD
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 
 /* Add some content at the bottom of the video/page */
@@ -55,7 +54,7 @@ video {
   font-size: 18px;
   padding: 10px 16px;
   border: none;
-  background: #99e0d6;
+  background: #65c0c7;
   color: #fafffe;
   margin-right: 30px; }
 
@@ -66,9 +65,6 @@ video {
 .myBtnSignup:hover {
   background: #ddd;
   color: #152729; }
-=======
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  margin-left: 88px; }
 
 /* HEADER - NAV
 =====================*/
@@ -179,6 +175,5 @@ aside {
   background-color: #dff3f5;
   height: 100vh;
   width: 40vw; }
->>>>>>> 6e3d642116e7ca54a6bb0003031802e600096458
 
 /*# sourceMappingURL=style.css.map */
