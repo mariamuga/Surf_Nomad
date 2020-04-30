@@ -8,9 +8,11 @@ router.get("/", (req, res) => {
     .then((allSpots) => {
       // console.log("allSpots: ", allSpots);
       const count = allSpots.length;
-      res.render("overview", { spots: allSpots, count });
+      res.render("auth/explore", { spots: allSpots, count });
     })
-    .catch((error) => console.log("Error while getting spots from DB: ", error));
+    .catch((error) =>
+      console.log("Error while getting spots from DB: ", error)
+    );
 });
 
 module.exports = router;

@@ -9,9 +9,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
 const app_name = require("./package.json").name;
-const debug = require("debug")(
-  `${app_name}:${path.basename(__filename).split(".")[0]}`
-);
+const debug = require("debug")(`${app_name}:${path.basename(__filename).split(".")[0]}`);
 const User = require("./models/User");
 // Login & Signup incription
 const session = require("express-session");
@@ -32,9 +30,7 @@ mongoose.set("useUnifiedTopology", true);
 mongoose
   .connect("mongodb://localhost/Surf_Nomad", { useNewUrlParser: true })
   .then((x) => {
-    console.log(
-      `Connected to Mongo! Database name: "${x.connections[0].name}"`
-    );
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
   .catch((err) => {
     console.error("Error connecting to mongo", err);
@@ -139,13 +135,13 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
 // default value for title local
-app.locals.title = "Surf Digital Nomad";
+//app.locals.title = "Surf Digital Nomad";
 
 const index = require("./routes/index");
 app.use("/", index);
 
 const spotsRoute = require("./routes/spots");
-app.use("/spots", spotsRoute);
+app.use("/explore", spotsRoute);
 
 // Routes middleware goes here
 const authRoutes = require("./routes/auth");
