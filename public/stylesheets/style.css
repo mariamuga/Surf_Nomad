@@ -42,11 +42,12 @@ body {
 video {
   height: 100vh; }
 
-h1 {
+.introText {
   font-size: 50px; }
 
-h3 {
-  font-size: 25px; }
+.introTextSecondary {
+  font-size: 25px;
+  margin-top: 20px; }
 
 #homeButtons {
   margin: 80px;
