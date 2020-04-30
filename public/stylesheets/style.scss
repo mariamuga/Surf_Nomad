@@ -340,3 +340,23 @@ aside {
   height: 100vh;
   width: 40vw;
 }
+
+/* DETAIL
+=====================*/
+#detail {
+  margin-left: 88px;
+  padding: 32px;
+  width: 100%;
+  background-color: red;
+}
+#detail p {
+  text-align: left;
+  height: 10vh;
+  width: 100vw;
+  background: rgba(21, 39, 41, 0.5);
+  color: #fafffe;
+}
+.locationDetail {
+  display: flex;
+  margin-top: 16px;
+}

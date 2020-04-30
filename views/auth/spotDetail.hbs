@@ -1,19 +1,21 @@
-{{#with spot}}
-<div class="cardContent">
-  <div>
-    <div>
-      <h2 class=" spotName">{{this.name}}</h2>
-      <div class="tagsCard">
-        <h4 class="spotType">{{this.type}}</h4>
-        <h4 class="spotSeabed">{{this.seabed}}</h4>
-      </div>
-    </div>
-    <div class="locationCard">
-      <h5 class="spotRegion">{{this.location.region}}</h5>
-      ,
-      <h5 class="spotCountry">{{this.location.country}}</h5>
-    </div>
+<main id="detail">
+  {{#with spot}}
+  <h2 class=" spotName">{{this.name}}</h2>
+  <div class="locationDetail">
+    <h5 class="spotRegion">{{this.location.region}}</h5>
+    ,
+    <h5 class="spotCountry">{{this.location.country}}</h5>
   </div>
-  <div class="divider"></div>
-</div>
-{{/with}}
+  <div class="dividerDetail"></div>
+
+  <h4>Description</h4>
+  <p class="about">{{this.description}}</p>
+  <h4 class="spotType">{{this.type}}</h4>
+  <h4 class="spotSeabed">{{this.seabed}}</h4>
+
+
+  </div>
+  <div class="dividerDetail"></div>
+  </div>
+  {{/with}}
+</main>
