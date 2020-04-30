@@ -13,7 +13,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: rgba(21, 39, 41, 0.9); }
 
 /* HOME
 =====================*/
@@ -151,13 +152,89 @@ nav div .navLink h6 {
 /* MAIN
 =====================*/
 main {
+  margin-left: 88px;
   padding: 32px;
   width: 50vw; }
+
+/* DROPDOWN */
+.custom-select {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8); }
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/ }
+
+.select-selected {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent; }
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
+  top: 7px; }
+
+/*style the items (options), including the selected item:*/
+.select-selected {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none; }
+
+.select-items div {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none; }
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #edeeee;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none; }
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/* SPOTS
+=====================*/
+#spots div#top h1 {
+  display: inline-block;
+  margin-top: 48px;
+  color: rgba(21, 39, 41, 0.8); }
+
+#spots div#top h4 {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: 500;
+  color: rgba(21, 39, 41, 0.7); }
 
 .spotCard {
   display: flex;
   flex-direction: row;
-  margin-top: 16px;
+  margin-top: 32px;
   padding: 8px;
   border-radius: 4px; }
 
@@ -205,7 +282,7 @@ a:hover {
 
 .divider {
   position: relative;
-  top: 0px;
+  top: 8px;
   margin: 16px auto 0;
   height: 1px;
   width: 100%;
