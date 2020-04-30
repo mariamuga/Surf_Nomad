@@ -55,8 +55,17 @@ nav div .navLink h6 {
   margin-top: 3px;
   font-weight: 500; }
 
+/* MAIN
+=====================*/
 main {
   margin-left: 88px;
-  padding: 24px; }
+  padding: 24px;
+  width: 60vw; }
+
+.spotCard {
+  border: solid 1px tomato;
+  display: flex;
+  flex-direction: row;
+  padding: 16px; }
 
 /*# sourceMappingURL=style.css.map */
