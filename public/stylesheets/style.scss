@@ -16,7 +16,9 @@ body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-/* Add some content at the bottom of the video/page */
+/* HOME STYLE
+=====================*/
+
 #homeIntro {
   display: flex;
   flex-direction: column;
@@ -29,7 +31,6 @@ body {
   padding: 20px;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
 #homeVideo {
   overflow: hidden;
   position: fixed;
