@@ -1,8 +1,62 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+@charset "UTF-8";
+/*
+    Created on : Apr 2020
+    Author: Maria Muga & Clara Fernández-Miranda
+*/
+/* RESET
+=====================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* border: solid 1px red; */ }
 
-a {
-  color: #00B7FF; }
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+
+/* HEADER - NAV
+=====================*/
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 88px;
+  background-color: #65c0c7;
+  /* background-color: #99e0d6; */
+  /*   background-color: #fafffe;*/ }
+
+nav {
+  height: 100vh;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; }
+
+nav ul {
+  list-style: none; }
+
+nav div #logo {
+  margin-bottom: 20px; }
+
+nav div .navLink {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  /* color: #152729; */
+  color: #fafffe;
+  text-decoration: none; }
+
+nav div .navLink h6 {
+  font-size: 10px;
+  margin-top: 3px;
+  font-weight: 500; }
+
+main {
+  margin-left: 88px;
+  padding: 24px; }
 
 /*# sourceMappingURL=style.css.map */

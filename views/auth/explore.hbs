@@ -1,25 +1,53 @@
-<section id="spots">
+{{!-- {{>navigation}} --}}
+<main>
+  <section id="filter">
+    <form action="/explore" method="GET">
+      <select id="breaktypeDropdown" name="breaktypes">
+        <option value="">Select break type</option>
+        <option value="Peaky Beachbreak" value="Right-hand Pointbreak" value="Left-hand Pointbreak" value="Peaky Reef">
+          All
+          types</option>
+        <option value="Peaky Beachbreak">Peaky Beachbreak</option>
+        <option value="Right-hand Pointbreak">Right-hand Pointbreak</option>
+        <option value="Left-hand Pointbreak">Left-hand Pointbreak</option>
+        <option value="Peaky Reef">Peaky Reef</option>
+      </select>
+      <select id="seabedDropdown" name="seabed">
+        <option value="">Select seabed type</option>
+        <option value="Sand" value="Uneven Reef" value="Live Coral" value="Dead Coral" value="Rock Ledge"
+          value="Boulders">All types</option>
+        <option value="Sand">Sand</option>
+        <option value="Uneven Reef">Uneven Reef</option>
+        <option value="Live Coral">Live Coral</option>
+        <option value="Dead Coral">Dead Coral</option>
+        <option value="Rock Ledge">Rock Ledge</option>
+        <option value="Boulders">Boulders</option>
+      </select>
+      <button method="GET">Search</button>
+    </form>
+  </section>
 
-  <h1>Surfing spots</h1>
-  <h4>Results {{count}}</h4>
+  <section id="spots">
+    <h1>Surfing spots</h1>
+    <h4>Results {{count}}</h4>
 
-  {{#each spots}}
-  <div class="spotCard">
-    <div class="cardImage" Card>
-      <img src="" alt="">
-    </div>
-    <div class="cardContent">
-      <h2 class="spotName">{{this.name}}</h2>
-      <div>
-        <h4 class="spotType">{{this.type}}</h4>
-        <h4 class="spotSeabed">{{this.seabed}}</h4>
+    {{#each spots}}
+    <div class="spotCard">
+      <div class="cardImage" Card>
+        <img src="" alt="">
       </div>
-      <div>
-        <h5 class="spotRegion">{{this.location.region}}</h5>
-        <h5 class="spotCountry">{{this.location.country}}</h5>
+      <div class="cardContent">
+        <h2 class="spotName">{{this.name}}</h2>
+        <div>
+          <h4 class="spotType">{{this.type}}</h4>
+          <h4 class="spotSeabed">{{this.seabed}}</h4>
+        </div>
+        <div>
+          <h5 class="spotRegion">{{this.location.region}}</h5>
+          <h5 class="spotCountry">{{this.location.country}}</h5>
+        </div>
       </div>
     </div>
-  </div>
-  {{/each}}
-
-</section>
+    {{/each}}
+  </section>
+</main>
