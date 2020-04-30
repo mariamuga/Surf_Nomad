@@ -10,8 +10,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  /* border: solid 1px red; */ }
+  box-sizing: border-box; }
 
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
@@ -26,7 +25,7 @@ header {
   width: 88px;
   background-color: #65c0c7;
   /* background-color: #99e0d6; */
-  /*   background-color: #fafffe;*/ }
+  /* background-color: #fafffe; */ }
 
 nav {
   height: 100vh;
@@ -59,13 +58,36 @@ nav div .navLink h6 {
 =====================*/
 main {
   margin-left: 88px;
-  padding: 24px;
+  padding: 32px;
   width: 60vw; }
 
 .spotCard {
-  border: solid 1px tomato;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  border-radius: 4px; }
+
+.cardImage {
+  border-radius: 4px;
+  width: 150px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cardContent {
   padding: 16px; }
+
+.divider {
+  margin: 16px auto;
+  height: 1px;
+  width: 60%;
+  background-color: rgba(21, 39, 41, 0.1); }
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dff3f5;
+  height: 100vh;
+  width: 32vw; }
 
 /*# sourceMappingURL=style.css.map */

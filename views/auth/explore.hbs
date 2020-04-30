@@ -33,9 +33,7 @@
 
     {{#each spots}}
     <div class="spotCard">
-      <div class="cardImage" style=" width: 150px; height: 150px; background-image: url(/images/Spot_Photos/01-Ribadesella.jpg); background-size: cover;
-  background-repeat: no-repeat;">
-        <img src="{{this.img}}" alt="">
+      <div class="cardImage" style="background-image: url({{this.img}});">
       </div>
       <div class="cardContent">
         <h2 class="spotName">{{this.name}}</h2>
@@ -49,6 +47,8 @@
         </div>
       </div>
     </div>
+    <div class="divider"></div>
     {{/each}}
   </section>
 </main>
+<aside id="map"> map</aside>
