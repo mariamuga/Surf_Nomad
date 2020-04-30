@@ -16,11 +16,7 @@ body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: rgba(21, 39, 41, 0.9); }
 
-<<<<<<< HEAD
-/* HOME STYLE
-=======
 /* HOME
->>>>>>> 46ba6a184265a88f59fac4019be298e0a8bd648d
 =====================*/
 #homeIntro {
   display: flex;
@@ -47,7 +43,10 @@ video {
   height: 100vh; }
 
 h1 {
-  font-size: 30px; }
+  font-size: 50px; }
+
+h3 {
+  font-size: 25px; }
 
 #homeButtons {
   margin: 80px;
