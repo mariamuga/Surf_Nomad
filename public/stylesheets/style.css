@@ -13,7 +13,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  margin-left: 88px; }
 
 /* HEADER - NAV
 =====================*/
@@ -57,29 +58,64 @@ nav div .navLink h6 {
 /* MAIN
 =====================*/
 main {
-  margin-left: 88px;
   padding: 32px;
-  width: 60vw; }
+  width: 50vw; }
 
 .spotCard {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 16px;
+  padding: 8px;
   border-radius: 4px; }
 
 .cardImage {
   border-radius: 4px;
-  width: 150px;
+  width: 200px;
   background-size: cover;
   background-repeat: no-repeat; }
 
 .cardContent {
-  padding: 16px; }
+  height: 136px;
+  width: 80%;
+  padding-left: 16px; }
+
+.cardContent div:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+
+.tagsCard,
+.locationCard {
+  display: flex; }
+
+.tagsCard {
+  margin-top: 8px; }
+
+.locationCard h5:first-child {
+  margin-right: 4px; }
+
+.locationCard h5:last-child {
+  margin-left: 4px; }
+
+a {
+  text-decoration: none;
+  color: #152729; }
+
+a:hover {
+  text-decoration: none;
+  color: #65c0c7; }
+
+.cardContent h2 {
+  font-size: 24px;
+  font-weight: 500; }
 
 .divider {
-  margin: 16px auto;
+  position: relative;
+  top: 0px;
+  margin: 16px auto 0;
   height: 1px;
-  width: 60%;
+  width: 100%;
   background-color: rgba(21, 39, 41, 0.1); }
 
 aside {
@@ -88,6 +124,6 @@ aside {
   right: 0;
   background-color: #dff3f5;
   height: 100vh;
-  width: 32vw; }
+  width: 40vw; }
 
 /*# sourceMappingURL=style.css.map */

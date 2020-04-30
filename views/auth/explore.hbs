@@ -33,21 +33,28 @@
 
     {{#each spots}}
     <div class="spotCard">
-      <div class="cardImage" style="background-image: url({{this.img}});">
-      </div>
+      <a href="/explore" class="cardImage" style="background-image: url({{this.img}});">
+      </a>
       <div class="cardContent">
-        <h2 class="spotName">{{this.name}}</h2>
         <div>
-          <h4 class="spotType">{{this.type}}</h4>
-          <h4 class="spotSeabed">{{this.seabed}}</h4>
+          <div>
+            <a href="/explore">
+              <h2 class="spotName">{{this.name}}</h2>
+            </a>
+            <div class="tagsCard">
+              <h4 class="spotType">{{this.type}}</h4>
+              <h4 class="spotSeabed">{{this.seabed}}</h4>
+            </div>
+          </div>
+          <div class="locationCard">
+            <h5 class="spotRegion">{{this.location.region}}</h5>
+            ,
+            <h5 class="spotCountry">{{this.location.country}}</h5>
+          </div>
         </div>
-        <div>
-          <h5 class="spotRegion">{{this.location.region}}</h5>
-          <h5 class="spotCountry">{{this.location.country}}</h5>
-        </div>
+        <div class="divider"></div>
       </div>
     </div>
-    <div class="divider"></div>
     {{/each}}
   </section>
 </main>
