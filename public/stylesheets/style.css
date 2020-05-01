@@ -21,7 +21,7 @@ body {
 main {
   margin-left: 88px;
   padding: 32px 44px;
-  width: 50vw; }
+  width: 55vw; }
 
 a {
   text-decoration: none;
@@ -331,28 +331,8 @@ aside {
   right: 0;
   background-color: #dff3f5;
   height: 100vh;
-  width: 40vw; }
+  width: 38vw; }
 
-<<<<<<< HEAD
-/* DETAIL
-=====================*/
-#detail {
-  margin-left: 88px;
-  padding: 32px;
-  width: 100%;
-  background-color: red; }
-
-#detail p {
-  text-align: left;
-  height: 10vh;
-  width: 100vw;
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe; }
-
-.locationDetail {
-  display: flex;
-  margin-top: 16px; }
-=======
 /* DROPDOWN */
 #filter form {
   display: inline;
@@ -425,6 +405,121 @@ aside {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
->>>>>>> a3245cdec9c5b6ed44895c6d2b55baef4c896853
+
+#spots div#top h1 {
+  display: inline-block;
+  margin-top: 48px;
+  color: rgba(21, 39, 41, 0.8); }
+
+#spots div#top h4 {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: 500;
+  color: rgba(21, 39, 41, 0.7); }
+
+.spotCard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  padding: 8px;
+  border-radius: 4px; }
+
+.cardImage {
+  border-radius: 4px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cardContent {
+  height: 136px;
+  width: 80%;
+  padding-left: 16px; }
+
+.cardContent div:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+
+.tagsCard,
+.locationCard {
+  display: flex; }
+
+.tagsCard {
+  margin-top: 8px; }
+
+.locationCard h5:first-child {
+  margin-right: 4px; }
+
+.locationCard h5:last-child {
+  margin-left: 4px; }
+
+a {
+  text-decoration: none;
+  color: #152729; }
+
+a:hover {
+  text-decoration: none;
+  color: #65c0c7; }
+
+.cardContent h2 {
+  font-size: 24px;
+  font-weight: 500; }
+
+.divider {
+  position: relative;
+  top: 8px;
+  margin: 16px auto 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(21, 39, 41, 0.1); }
+
+/* DETAIL
+=====================*/
+main#detail {
+  padding: 56px; }
+
+.locationDetail {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500; }
+
+.locationDetail h1 {
+  font-size: 32px; }
+
+.locationDetail h1 {
+  margin-right: 16px; }
+
+.locationDetail h4.spotRegion {
+  margin-right: 4px; }
+
+.locationDetail h4.spotCountry {
+  margin-left: 4px; }
+
+#detail h5 {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 16px;
+  background-color: #dff3f5;
+  padding: 4px 8px; }
+
+#detail h5:not(:last-child) {
+  margin-right: 4px; }
+
+div.spotImg {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  margin: 32px 0; }
+
+#detail .aboutSpot h4 {
+  margin: 40px 0 16px; }
+
+.aboutSpot ul {
+  display: flex;
+  list-style: none; }
+
+.aboutSpot ul li:not(:last-child) {
+  margin-right: 24px; }
 
 /*# sourceMappingURL=style.css.map */

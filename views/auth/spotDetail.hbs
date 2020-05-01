@@ -1,21 +1,35 @@
 <main id="detail">
-  {{#with spot}}
-  <h2 class=" spotName">{{this.name}}</h2>
-  <div class="locationDetail">
-    <h5 class="spotRegion">{{this.location.region}}</h5>
-    ,
-    <h5 class="spotCountry">{{this.location.country}}</h5>
-  </div>
-  <div class="dividerDetail"></div>
 
-  <h4>Description</h4>
-  <p class="about">{{this.description}}</p>
-  <h4 class="spotType">{{this.type}}</h4>
-  <h4 class="spotSeabed">{{this.seabed}}</h4>
+  <section id="spots">
 
+    {{#with spot}}
+    <div class="locationDetail">
+      <h1 class=" spotName">{{this.name}}</h1>
 
-  </div>
-  <div class="dividerDetail"></div>
-  </div>
-  {{/with}}
+      <h4 class="spotRegion">{{this.location.region}}</h4>
+      <p>,</p>
+      <h4 class="spotCountry">{{this.location.country}}</h4>
+    </div>
+
+    <h5 class="spotType">{{this.type}}</h5>
+    <h5 class="spotSeabed">{{this.seabed}}</h5>
+    <h5 class="swellRange">Swell range: <span>{{this.swell_range}}</span></h5>
+
+    <div class="spotImg" style="background-image: url({{this.img}});"></div>
+
+    <section class="aboutSpot">
+      <h4>About the spot</h4>
+      <p class="about">{{this.description}}</p>
+
+      <h4>Ideal conditions</h4>
+      <ul>
+        <li>Best tide: <b>{{this.best_tide}}</b></li>
+        <li>Swell direction: <b>{{this.swell_direction}}</b></li>
+        <li>Wind direction: <b>{{this.wind_direction}}</b></li>
+      </ul>
+    </section>
+    {{/with}}
+
+  </section>
 </main>
+<aside id="map"> map</aside>

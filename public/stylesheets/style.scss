@@ -23,7 +23,7 @@ body {
 main {
   margin-left: 88px;
   padding: 32px 44px;
-  width: 50vw;
+  width: 55vw;
 }
 
 a {
@@ -381,7 +381,7 @@ aside {
   right: 0;
   background-color: #dff3f5;
   height: 100vh;
-  width: 40vw;
+  width: 38vw;
 }
 
 /* DROPDOWN */
@@ -469,10 +469,6 @@ aside {
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-
-/* SPOTS
-=====================*/
 
 #spots div#top h1 {
   display: inline-block;
@@ -547,33 +543,59 @@ a:hover {
   width: 100%;
   background-color: rgba(21, 39, 41, 0.1);
 }
-aside {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #dff3f5;
-  height: 100vh;
-  width: 40vw;
-}
 
 /* DETAIL
 =====================*/
-#detail {
-  margin-left: 88px;
-  padding: 32px;
-  width: 100%;
-  background-color: red;
+
+main#detail {
+  padding: 56px;
 }
-#detail p {
-  text-align: left;
-  height: 10vh;
-  width: 100vw;
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
-}
+
 .locationDetail {
   display: flex;
-  margin-top: 16px;
+  align-items: baseline;
+  font-weight: 500;
 }
-=======
->>>>>>> a3245cdec9c5b6ed44895c6d2b55baef4c896853
+.locationDetail h1 {
+  font-size: 32px;
+}
+.locationDetail h1 {
+  margin-right: 16px;
+}
+.locationDetail h4.spotRegion {
+  margin-right: 4px;
+}
+.locationDetail h4.spotCountry {
+  margin-left: 4px;
+}
+
+#detail h5 {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 16px;
+  background-color: #dff3f5;
+  padding: 4px 8px;
+}
+#detail h5:not(:last-child) {
+  margin-right: 4px;
+}
+
+div.spotImg {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  margin: 32px 0;
+}
+
+#detail .aboutSpot h4 {
+  margin: 40px 0 16px;
+}
+
+.aboutSpot ul {
+  display: flex;
+  list-style: none;
+}
+
+.aboutSpot ul li:not(:last-child) {
+  margin-right: 24px;
+}
