@@ -104,7 +104,10 @@ video {
 .btnSecondary:hover {
   background: #fafffe;
   color: #65c0c7;
-  border: 0;
+}
+
+.btnSecondary:hover {
+  border: 1px solid #fafffe;
 }
 
 /* SIGNUP
