@@ -35,7 +35,7 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useUnifiedTopology", true);
 
 mongoose
-  .connect("mongodb://localhost/Surf_Nomad" || process.env.MONGODB_URI, {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/Surf_Nomad", {
     useNewUrlParser: true,
   })
   .then((x) => {
