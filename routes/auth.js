@@ -24,23 +24,16 @@ router.post("/signup", (req, res, next) => {
   if (password.length < 8) {
     res.render("auth/signup", {
       message: "Your password must be 8 characters minimun.",
-      layout: false,
     });
     return;
   }
   if (username === "") {
-    res.render("auth/signup", {
-      message: "Your username cannot be empty",
-      layout: false,
-    });
+    res.render("auth/signup", { message: "Your username cannot be empty" });
     return;
   }
   User.findOne({ username: username }).then((found) => {
     if (found !== null) {
-      res.render("auth/signup", {
-        message: "This username is already taken",
-        layout: false,
-      });
+      res.render("auth/signup", { message: "This username is already taken" });
     } else {
       const salt = bcrypt.genSaltSync();
       const hash = bcrypt.hashSync(password, salt);
