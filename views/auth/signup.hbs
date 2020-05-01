@@ -11,36 +11,39 @@
 </head>
 
 <body>
-  <h2>Signup</h2>
+  <main id="signup">
+    <div class="container">
+      <h2>Signup</h2>
 
-  <form action="/signup" method="POST" id="form-container">
-    <label for="username">Username</label>
-    <input id="username" type="text" name="username" placeholder="Your username">
+      <div {{!-- id="normalSignup" --}}>
 
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email" placeholder="Your email">
+        <form action="/signup" method="POST" id="form-container">
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username" placeholder="Your username">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Your email">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Your password">
+          {{#if message}}
+          <div class="error-message">{{ message }}</div>
+          {{/if}}
+          <button>Create account</button>
+        </form>
 
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password" placeholder="Your password">
+        <div class="verticalDivider"></div>
 
-    {{#if message}}
-    <div class="error-message">{{ message }}</div>
-    {{/if}}
+        <section id="googleSignup">
+          <p class="or">Or you can sign up with you Google Account!</p>
+          {{#unless user}}
+          <a href="/auth/google">SignUp With Google</a>
+          {{/unless}}
+        </section>
 
+      </div>
 
-    <button>Create account</button>
-  </form>
-
-
-  <p>Or</p>
-
-  {{#unless user}}
-  <div>
-    <a href="/auth/google">SignUp With Google</a>
-  </div>
-  {{/unless}}
-
-  <a href="/">Back Home</a>
+      <a href="/" class="back">Go back</a>
+    </div>
+  </main>
 </body>
 
 </html>

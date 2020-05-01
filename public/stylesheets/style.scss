@@ -17,6 +17,24 @@ body {
   color: rgba(21, 39, 41, 0.9);
 }
 
+/* MAIN
+=====================*/
+
+main {
+  margin-left: 88px;
+  padding: 32px;
+  width: 50vw;
+}
+
+a {
+  text-decoration: none;
+  color: #152729;
+}
+a:hover {
+  text-decoration: none;
+  color: #65c0c7;
+}
+
 /* HOME
 =====================*/
 
@@ -66,35 +84,132 @@ video {
   margin-top: 16px;
 }
 
-.myBtnLogin {
+.btnPrimary {
   width: 200px;
-  font-size: 18px;
-  padding: 10px 16px;
-  border: none;
-  background: #65c0c7;
   color: #fafffe;
-  border-radius: 4px;
+  background-color: #65c0c7;
+  padding: 8px;
+  font-size: 15px;
 }
 
-.myBtnSignup {
+.btnSecondary {
   width: 200px;
-  font-size: 18px;
-  padding: 10px 16px;
+  padding: 8px;
+  font-size: 15px;
   border: 1px solid #65c0c7;
-  border-radius: 4px;
   color: #65c0c7;
 }
 
-.myBtnLogin:hover,
-.myBtnSignup:hover {
+.btnPrimary:hover,
+.btnSecondary:hover {
   background: #fafffe;
   color: #65c0c7;
+}
+
+/* SIGNUP
+=====================*/
+
+main#signup {
+  height: 100vh;
+  width: 100vw;
+  margin-left: 0;
+  padding: 0;
+  background-image: url(../images/signup.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(250, 255, 254, 0.6);
+  padding: 48px 80px 36px;
+  text-align: center;
+}
+
+.container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+}
+
+label {
+  font-size: 11px;
+  text-align: left;
+}
+
+form label:not(:first-child) {
+  margin-top: 12px;
+}
+
+input {
+  margin-top: 4px;
+  padding: 8px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+  color: #65c0c7;
+}
+button {
+  color: #fafffe;
+  background-color: #65c0c7;
+  border: 0;
+  padding: 8px 0;
+  font-size: 15px;
+  margin-top: 24px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+div.verticalDivider {
+  width: 1px;
+  height: 180px;
+  background-color: rgba(21, 39, 41, 0.5);
+  margin: 0 64px;
+}
+
+.container p {
+  width: 16vw;
+  font-size: 14px;
+}
+
+#googleSignup a {
+  color: #fafffe;
+  background-color: #65c0c7;
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 15px;
+  width: 16vw;
+  margin-top: 24px;
+}
+
+button:hover,
+#googleSignup a:hover {
+  background: #fafffe;
+  color: #65c0c7;
+}
+
+.container a.back {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 12px;
 }
 
 /* LOGIN
 =====================*/
 
-#form {
+/* #form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,11 +219,6 @@ video {
   background: rgba(21, 39, 41, 0.5);
   color: #fafffe;
   padding: 20px;
-}
-
-input {
-  margin: 7px;
-  padding: 5px;
 }
 
 #login {
@@ -129,7 +239,7 @@ input {
   width: 100vw;
   background: rgba(21, 39, 41, 0.5);
   color: #fafffe;
-} */
+} 
 
 #google {
   text-align: center;
@@ -138,7 +248,7 @@ input {
   background: rgba(21, 39, 41, 0.5);
   color: #fafffe;
   padding: 20px;
-}
+} */
 
 /* HEADER - NAV
 =====================*/
@@ -183,15 +293,6 @@ nav div .navLink h6 {
   font-size: 10px;
   margin-top: 3px;
   font-weight: 500;
-}
-
-/* MAIN
-=====================*/
-
-main {
-  margin-left: 88px;
-  padding: 32px;
-  width: 50vw;
 }
 
 /* DROPDOWN */
@@ -307,27 +408,24 @@ main {
   flex-direction: column;
   align-content: space-between;
 }
+
 .tagsCard,
 .locationCard {
   display: flex;
 }
+
 .tagsCard {
   margin-top: 8px;
 }
+
 .locationCard h5:first-child {
   margin-right: 4px;
 }
+
 .locationCard h5:last-child {
   margin-left: 4px;
 }
-a {
-  text-decoration: none;
-  color: #152729;
-}
-a:hover {
-  text-decoration: none;
-  color: #65c0c7;
-}
+
 .cardContent h2 {
   font-size: 24px;
   font-weight: 500;
