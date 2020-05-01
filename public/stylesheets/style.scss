@@ -94,6 +94,11 @@ video {
 /* LOGIN
 =====================*/
 
+.logText {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 #form {
   display: flex;
   flex-direction: column;
@@ -101,8 +106,8 @@ video {
   align-items: center;
   height: 50vh;
   width: 100vw;
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
+  background: rgba(250, 255, 254, 0.01);
+  color: #65c0c7;
   padding: 20px;
 }
 
@@ -121,6 +126,7 @@ input {
   margin-right: 30px;
   margin-top: 10px;
   margin-left: 35px;
+  border-radius: 4px;
 }
 
 /* p {
@@ -135,8 +141,8 @@ input {
   text-align: center;
   height: 100vh;
   width: 100vw;
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
+  background: rgba(250, 255, 254, 0.01);
+  color: #65c0c7;
   padding: 20px;
 }
 
