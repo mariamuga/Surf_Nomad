@@ -89,7 +89,8 @@ video {
 .btnPrimary:hover,
 .btnSecondary:hover {
   background: #fafffe;
-  color: #65c0c7; }
+  color: #65c0c7;
+  border: 0; }
 
 /* SIGNUP
 =====================*/
@@ -179,36 +180,17 @@ button:hover,
 
 /* LOGIN
 =====================*/
-<<<<<<< HEAD
-.logText {
-  font-size: 30px;
-  margin-bottom: 30px; }
-
-#form {
-=======
 /* #form {
->>>>>>> 195867920733071e22366e517a1360df6c265fca
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50vh;
   width: 100vw;
-<<<<<<< HEAD
   background: rgba(250, 255, 254, 0.01);
   color: #65c0c7;
-  padding: 20px; }
-
-input {
-  margin: 7px;
-  padding: 5px;
-  size: 100px; }
-=======
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
   padding: 20px;
 }
->>>>>>> 195867920733071e22366e517a1360df6c265fca
 
 #login {
   width: 200px;
@@ -220,11 +202,8 @@ input {
   margin-right: 30px;
   margin-top: 10px;
   margin-left: 35px;
-<<<<<<< HEAD
-  border-radius: 4px; }
-=======
+  border-radius: 4px;
 }
->>>>>>> 195867920733071e22366e517a1360df6c265fca
 
 /* p {
   text-align: center;
@@ -232,27 +211,16 @@ input {
   width: 100vw;
   background: rgba(21, 39, 41, 0.5);
   color: #fafffe;
-<<<<<<< HEAD
-} */
-=======
 } 
 
->>>>>>> 195867920733071e22366e517a1360df6c265fca
 #google {
   text-align: center;
   height: 100vh;
   width: 100vw;
-<<<<<<< HEAD
   background: rgba(250, 255, 254, 0.01);
   color: #65c0c7;
-  padding: 20px; }
-
-=======
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
   padding: 20px;
 } */
->>>>>>> 195867920733071e22366e517a1360df6c265fca
 /* HEADER - NAV
 =====================*/
 header {
