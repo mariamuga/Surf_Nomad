@@ -228,48 +228,6 @@ div#login {
   align-items: center;
 }
 
-/* #form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 100vw;
-  background: rgba(250, 255, 254, 0.01);
-  color: #65c0c7;
-  padding: 20px;
-}
-
-#login {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px 16px;
-  border: none;
-  background: #65c0c7;
-  color: #fafffe;
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-left: 35px;
-  border-radius: 4px;
-}
-
-/* p {
-  text-align: center;
-  height: 10vh;
-  width: 100vw;
-  background: rgba(21, 39, 41, 0.5);
-  color: #fafffe;
-} 
-
-#google {
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(250, 255, 254, 0.01);
-  color: #65c0c7;
-  padding: 20px;
-} */
-
 /* HEADER - NAV
 =====================*/
 
@@ -358,9 +316,16 @@ nav div .navLink h6 {
   align-content: space-between;
 }
 
-.tagsCard,
-.locationCard {
-  display: flex;
+.tagsCard {
+  display: inline;
+  margin-right: 8px;
+  font-weight: 500;
+}
+.tagsCard h4 {
+  margin-right: 8px;
+  font-weight: 500;
+  background-color: #dff3f5;
+  padding: 4px 8px;
 }
 
 .tagsCard {
@@ -584,7 +549,8 @@ main#detail {
 
 #detail h5 {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   margin-top: 16px;
   background-color: #dff3f5;
   padding: 4px 8px;
