@@ -1,6 +1,7 @@
 {{!-- {{>navigation}} --}}
 <main>
   <section id="filter">
+
     <form action="/explore" method="GET">
       <div class="custom-select">
         <select id="breaktypeDropdown" name="breaktypes">
@@ -13,6 +14,7 @@
           <option value="Peaky Reef">Peaky Reef</option>
         </select>
       </div>
+
       <div class="custom-select">
         <select id="seabedDropdown" name="seabed">
           <option value="">Select seabed type</option>
@@ -28,11 +30,14 @@
       </div>
 
       <button method="GET">Search</button>
+
     </form>
   </section>
 
+  <div class="dividerHorizontal"></div>
+
   <section id="spots">
-    <div id="top">
+    <div id="headline">
       <h1>Surfing spots</h1>
       <h4>Results {{count}}</h4>
     </div>
