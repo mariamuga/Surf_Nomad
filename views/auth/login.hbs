@@ -11,35 +11,41 @@
 </head>
 
 <body>
-  <form action="/login" method="POST" id="form">
-    <h2 class="logText">Login</h2>
+  <div id="login">
+    <div class="container">
+      <h2 class="logText">Login</h2>
+      <div>
+        <form action="/login" method="POST" id="form">
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username" placeholder="Your username">
 
-    <label for="username">Username</label>
-    <input type="text" name="username">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Your email">
 
-    <label for="email">Email</label>
-    <input type="text" name="email">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Your password">
 
-    <label for="password">Password</label>
-    <input type="password" name="password">
+          {{#if errorMessage }}
+          <div class="error-message">{{ errorMessage }}</div>
+          {{/if}}
 
-    {{#if errorMessage }}
-    <div class="error-message">{{ errorMessage }}</div>
-    {{/if}}
+          <button id="login">Login</button>
 
-    <button id="login">Login</button>
+        </form>
+        <div class="verticalDivider"></div>
 
-  </form>
+        <section id="googleSignup">
+          <p>Or you can login with your Google Account!</p>
+          {{#unless user}}
+          <a href="/auth/google">Login With Google</a>
+          {{/unless}}
+        </section>
+      </div>
 
-  <p>Or</p>
+      <a href="/" class="back">Go Back</a>
 
-  {{#unless user}}
-  <div id="google">
-    <a href="/auth/google">Login With Google</a>
+    </div>
   </div>
-  {{/unless}}
-
-  <a href="/">Back Home</a>
 </body>
 
 </html>
