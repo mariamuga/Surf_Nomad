@@ -22,8 +22,8 @@ body {
 
 main {
   margin-left: 88px;
-  padding: 32px;
-  width: 50vw;
+  padding: 32px 44px;
+  width: 55vw;
 }
 
 a {
@@ -166,6 +166,7 @@ input:focus {
   outline: none;
   color: #65c0c7;
 }
+
 button {
   color: #fafffe;
   background-color: #65c0c7;
@@ -314,7 +315,104 @@ nav div .navLink h6 {
   font-weight: 500;
 }
 
+/* SPOTS
+=====================*/
+
+#spots div#headline h1 {
+  display: inline-block;
+  margin-top: 48px;
+  color: rgba(21, 39, 41, 0.8);
+}
+
+#spots div#headline h4 {
+  display: inline-block;
+  margin-left: 16px;
+  font-weight: 500;
+  color: rgba(21, 39, 41, 0.7);
+}
+
+.spotCard {
+  // border: solid 1px rgba(21, 39, 41, 0.035);
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  padding: 8px;
+  border-radius: 4px;
+  // box-shadow: 0px 0px 3px 0px rgba(21, 39, 41, 0.15);
+}
+.cardImage {
+  border-radius: 4px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardContent {
+  height: 136px;
+  width: 80%;
+  padding-left: 16px;
+}
+.cardContent div:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.tagsCard,
+.locationCard {
+  display: flex;
+}
+
+.tagsCard {
+  margin-top: 8px;
+}
+
+.locationCard h5:first-child {
+  margin-right: 4px;
+}
+
+.locationCard h5:last-child {
+  margin-left: 4px;
+}
+
+.cardContent h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.divider {
+  position: relative;
+  top: 8px;
+  margin: 16px auto 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(21, 39, 41, 0.1);
+}
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dff3f5;
+  height: 100vh;
+  width: 38vw;
+}
+
 /* DROPDOWN */
+
+#filter form {
+  display: inline;
+  width: 40vw;
+}
+
+#filter button {
+  padding: 8px 16px;
+  margin-top: 0;
+}
+
+#filter button:hover {
+  box-shadow: 0px 0px 1px 1px #65c0c7;
+}
+
 .custom-select {
   width: 40%;
   position: relative;
@@ -385,9 +483,6 @@ nav div .navLink h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* SPOTS
-=====================*/
-
 #spots div#top h1 {
   display: inline-block;
   margin-top: 48px;
@@ -427,24 +522,27 @@ nav div .navLink h6 {
   flex-direction: column;
   align-content: space-between;
 }
-
 .tagsCard,
 .locationCard {
   display: flex;
 }
-
 .tagsCard {
   margin-top: 8px;
 }
-
 .locationCard h5:first-child {
   margin-right: 4px;
 }
-
 .locationCard h5:last-child {
   margin-left: 4px;
 }
-
+a {
+  text-decoration: none;
+  color: #152729;
+}
+a:hover {
+  text-decoration: none;
+  color: #65c0c7;
+}
 .cardContent h2 {
   font-size: 24px;
   font-weight: 500;
@@ -458,11 +556,59 @@ nav div .navLink h6 {
   width: 100%;
   background-color: rgba(21, 39, 41, 0.1);
 }
-aside {
-  position: fixed;
-  top: 0;
-  right: 0;
+
+/* DETAIL
+=====================*/
+
+main#detail {
+  padding: 56px;
+}
+
+.locationDetail {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+}
+.locationDetail h1 {
+  font-size: 32px;
+}
+.locationDetail h1 {
+  margin-right: 16px;
+}
+.locationDetail h4.spotRegion {
+  margin-right: 4px;
+}
+.locationDetail h4.spotCountry {
+  margin-left: 4px;
+}
+
+#detail h5 {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 16px;
   background-color: #dff3f5;
-  height: 100vh;
-  width: 40vw;
+  padding: 4px 8px;
+}
+#detail h5:not(:last-child) {
+  margin-right: 4px;
+}
+
+div.spotImg {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  margin: 32px 0;
+}
+
+#detail .aboutSpot h4 {
+  margin: 40px 0 16px;
+}
+
+.aboutSpot ul {
+  display: flex;
+  list-style: none;
+}
+
+.aboutSpot ul li:not(:last-child) {
+  margin-right: 24px;
 }
